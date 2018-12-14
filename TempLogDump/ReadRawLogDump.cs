@@ -66,7 +66,7 @@ namespace TempLogDump
 
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://prod-22.westeurope.logic.azure.com:443/workflows/c524750c6dd9459bb261bf307a6759f4/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=MChJ0ExCmdzIHUk8fH53H3Xu24_S0MszJSHXyk_9z_k");
+                client.BaseAddress = new Uri(--INSERT URL HERE--);
                 try
                 {
                     var result = await client.PostAsJsonAsync(string.Empty, json);
